@@ -3,31 +3,18 @@
    
 }
 ​
-export enum Producer {
-    Flagman = 'Flagman Seafood',
-    Umanpivo = 'Umanpivo',
-    SvoyaLiniya = 'Svoya Liniya'
+export enum University {
+    KNU = 'Taras Shevchenko National University of Kyiv',
+    KPI = 'Igor Sikorsky Kyiv Polytechnic Institute ',
+    LNU = 'Ivan Franko National University of Lviv',
+    LPU = 'Lviv Polytechnic National University'
 }
 ​
-export type TProduct = {
+export type TUniversity = {
     name: string,
-    price: number,
-    producer: Producer,
+    mingrade: number,
+    university: University,
 }
 ​
-export const seaProduct: TProduct = {
-    name: 'Dorada',
-    price: 35,
-    producer: Producer.Flagman
-}
-export const beerProduct: TProduct = {
-    name: 'Waissburg',
-    price: 20,
-    producer: Producer.Umanpivo
-}
-export const icecreamProduct: TProduct = {
-    name: 'Morozyvo',
-    price: 10,
-    producer: Producer.SvoyaLiniya
-}
+
 
