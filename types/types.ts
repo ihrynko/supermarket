@@ -1,6 +1,5 @@
  export interface IPerson {
     name: string;
-   
 }
 ​
 export enum University {
@@ -11,8 +10,9 @@ export enum University {
 }
 ​
 export type TUniversity = {
-    name: string,
+    specialization: string,
     mingrade: number,
+    price: number,
     university: University,
 }
 ​

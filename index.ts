@@ -1,17 +1,16 @@
-import { Warehouse } from './classes/Warehouse';
-import { Cashier } from './classes/Cashier';
-import { Customer } from './classes/Customer';
-import { WarehouseManager } from './classes/WarehouseManager';
-import { Supermarket } from './classes/Supermarket';
+import { SelectionCommittee } from './classes/SelectionCommittee';
+import { Student } from './classes/Student';
+import { Committer } from './classes/Committer';
+import {Criteria} from './classes/University'
 
-const cashier = new Cashier('Maria', true);
-const warehouseManager = new WarehouseManager('Bohdan', true);
-const customer = new Customer('Anton', 1000);
-const customer1 = new Customer('Anna',2000);
-const warehouse = new Warehouse();
-const market = new Supermarket();
-warehouseManager.getProducts(warehouse);
-market.open(cashier, warehouseManager);
-market.sell(['Waissburg'], customer, cashier);
-market.sell([ 'Dorada'], customer1, cashier);
-market.closeSupermarket(cashier);
+
+const student = new Student('Mark', 200);
+const selection = new SelectionCommittee();
+const committer = new Committer('ira', true);
+const criteria = new Criteria();
+committer.getCriteriaList(criteria);
+selection.open(committer);
+selection.checkStudents(student);
+selection.close();
+
+
